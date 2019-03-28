@@ -1,0 +1,91 @@
+rank{
+  flex: 1;
+  width: 100%;
+  overflow:auto;
+.search{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+.index_input{
+  // background: #c4c4c4;
+  width: 98%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  .section{
+    width: 98%;
+    border: 1px solid #FF7A27;
+    height: 80rpx;
+    // padding-left: 20rpx;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    image{
+      width: 52rpx;
+      height: 52rpx;
+      float: left;
+      margin-left: 20rpx;
+    }
+    input{
+      margin-left: 10rpx;
+      height: 50rpx;
+      color: #c4c4c4;
+      line-height: 50rpx;
+      font-size: 36rpx;
+    }
+  }
+  .kuang{
+    flex: 1;
+    width: 100%;
+    overflow: auto;
+    display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 30rpx;
+      font-size: 40rpx; 
+      .tuijian{
+        color:#FF7A27;
+        width:100%;
+        text-align: center;
+        margin-bottom: 30rpx;
+        text{
+          font-size: 37rpx;
+        }
+      }
+      .tuijian_list{
+        width: 48%;
+        height:516rpx;
+        border: 1px solid #FF7A27;
+        margin: 10rpx 5rpx;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10rpx 10rpx 10rpx 10rpx;
+        font-size: 30rpx;
+        color:rgba(0,0,0,.6);
+        .tuijian_img{
+          width:100%;
+          height:auto;
+          text-align: center;
+          image{
+            width: 100%;
+            height: auto;
+            border-radius: 10rpx 10rpx 10rpx 10rpx;
+          }
+        }
+        .tuijian_name{
+          color: #FF7A27;
+        }
+      }
+    }
+  }
+}
+
+}

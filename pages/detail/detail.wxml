@@ -1,0 +1,33 @@
+<!--pages/detail/detail.wxml-->
+<view class="mengceng">
+</view>
+<view class="detail">
+  <view class="detail_name">
+    {{detaillist.name}}
+  </view>
+  <view class="detail_singer">{{detaillist.singer}}</view>
+  <view class="detail_img xuanzhuan" style="animation-play-state: {{ player_flag == true ?'paused' : ''}};">
+    <image src="{{detaillist.songs[0].pic}}"></image>
+  </view>
+  <scroll-view class="detail_geci" scroll-y="true" scroll-with-animation='true' scroll-top='{{marginTop}}'>
+      <view class="detail_lrc {{currentIndex222 == index ? 'currentTime' : ''}}" wx:for="{{detaillrc}}" wx:key="{{index}}">{{item[1]}}</view>
+  </scroll-view>
+  <view class="detail_process">
+    <view class='pro'>
+        <text>{{currentProcess}}</text>
+        <slider bindchange="kuaijin" bindchanging="kuaijin" activeColor="#FF7A27" backgroundColor="#fff" block-size="12" bindtouchstart="" bindtouchend="" max="{{totalProcessNum}}" min="0" value="{{currentProcessNum}}" disabled="{{canSlider}}"></slider>
+        <text>{{totalProcess}}</text>
+    </view>
+  </view>
+  <view class="detail_operation">
+  <view class="op_one">
+    <image src='/pages/resource/shangyiqu.png' bindtap='player'></image>
+  </view>
+  <view class="op_two">
+    <image src='{{ player_flag == true ?"/pages/resource/bofang.png" : "/pages/resource/zanting.png"}}' bindtap='player'></image>
+  </view>
+  <view class="op_three">
+    <image src='/pages/resource/xiayiqu.png' bindtap='player'></image>
+  </view>
+  </view>
+</view>

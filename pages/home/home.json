@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "list": "/components/home/list/list",
+    "backtop": "/components/common/backtop/backtop",
+    "navbar": "/components/common/footer/footer"
+  },
+  "disableScroll": false,
+  "disableSwipeBack": false,
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50
+}

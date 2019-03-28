@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "backtop": "/components/common/backtop/backtop"
+  },
+  "disableScroll": false,
+  "disableSwipeBack": false,
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50
+}

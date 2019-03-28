@@ -1,0 +1,17 @@
+<!--components/common/footer/footer.wxml-->
+<view class="nav">
+  <view class="nav_tab">
+    <view class="nav_text">
+      <text class="{{activeindex == '0' ?'active' : ''}}" bindtap='switchtab' data-index="">我的</text>
+      <view class="nav_line"></view>
+    </view>
+    <view class="nav_text">
+      <text class="{{activeindex == '1' ?'active' : ''}}">音乐馆</text>
+    </view>
+    <view class="nav_text">
+      <text class="{{activeindex == '2' ?'active' : ''}}">排行</text>
+    </view>
+    
+  </view>
+</view>
+

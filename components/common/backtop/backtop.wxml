@@ -1,0 +1,6 @@
+<!--components/common/backtop/backtop.wxml-->
+
+<view bindtap="backTop" class='back_top' hidden='{{false}}'>
+  <image src="/pages/resource/backtop.png" mode='widthFix' />
+</view>
+

@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/home/home"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FF7A27",
+    "navigationBarTitleText": "AdiYun",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#6633CC",
+    "pageOrientation": "auto"
+  },
+  "disableScroll": false,
+  "disableSwipeBack": false,
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50
+}

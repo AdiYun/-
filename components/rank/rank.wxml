@@ -1,0 +1,20 @@
+<!--components/rank/rank.wxml-->
+<view class="search">
+  <view class="index_input">
+    <view class='section'>
+      <image src="/pages/resource/sousuo.png" ></image>
+      <input placeholder="搜索" auto-focus bindblur="search" />
+     
+    </view>
+    <view class="kuang">
+     <view class="tuijian_list" wx:for="{{list}}" bindtap='change' data-index="{{index}}" wx:key="{{item.id}}">
+    <view class="tuijian_img">
+      <image src="https://y.gtimg.cn/music/photo_new/T002R300x300M000{{item.album.mid}}.jpg?max_age=2592000" mode="widthFix"></image>
+    </view>
+    <view class="tuijian_name">{{item.name}}</view>
+    <view class="tuijian_singer">{{item.singer[0].name}}</view>
+    <view class="tuijian_time">{{item.time_public}}</view>
+  </view>
+  </view>
+  </view>
+</view>

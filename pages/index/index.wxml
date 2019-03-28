@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<view class="nav">
+  <view class="nav_tab">
+    <view class="nav_text">
+      <text class="{{activeindex == '0' ?'active' : ''}}" bindtap='switchtab' data-index="{{0}}">我的</text>
+      <view class="nav_line" style='left:{{line_left}}'></view>
+    </view>
+    <view class="nav_text">
+      <text class="{{activeindex == '1' ?'active' : ''}}" bindtap='switchtab'  data-index="{{1}}">音乐馆</text>
+    </view>
+    <view class="nav_text">
+      <text class="{{activeindex == '2' ?'active' : ''}}" bindtap='switchtab'  data-index="{{2}}">搜索</text>
+    </view>
+  </view>
+</view>
+<!-- <view class="index_input">
+  <view class='section'>
+    <image src="/pages/resource/sousuo.png" ></image>
+    <input placeholder="搜索" auto-focus />
+  </view>
+</view> -->
+<home class="index_home" bind:myevent="onHomeEvent" style="display: {{activeindex == '1' ?'block' : 'none'}}" list="{{tuijianList}}" imgUrls="{{imgUrls}}"></home>
+<user class="index_user" style="display: {{activeindex == '0' ?'block' : 'none'}}"> </user>
+<rank class="index_rank" style="display: {{activeindex == '2' ?'block' : 'none'}}"> </rank>
+
+<view class="index_footer">
+  <view class="footer_box">
+    <view class='footer_left'>
+      <view class="footer_image xuanzhuan" bindtap="goDetail" style="animation-play-state: {{ player_flag == true ?'' : 'paused'}};">
+        <image src='https://y.gtimg.cn/music/photo_new/T002R300x300M000{{tuijianList[foot_index].album.mid}}.jpg?max_age=2592000'></image>
+      </view>
+      <view class="footer_info">
+        <view class='info_name'>{{tuijianList[foot_index].name}}</view>
+        <view class='info_singer'>{{tuijianList[foot_index].singer[0].name}}</view>
+      </view>
+    </view>
+    <view class='footer_right'>
+      <view class="footer_play">
+        <image src='{{ player_flag == true ?"/pages/resource/zanting.png" : "/pages/resource/bofang.png"}}' bindtap='player' bind:event="player"></image>
+      </view>
+      <view class="footer_add">
+        <image src='{{ add_flag == true ?"/pages/resource/xihuan.png" : "/pages/resource/quxiao.png"}}' bindtap='add_like'></image>
+      </view>
+      <view class="footer_info">
+        <view class='info_name'></view>
+        <view class='info_singer'></view>
+      </view>
+    </view>
+  </view>
+</view>

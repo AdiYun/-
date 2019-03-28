@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "navbar": "/components/common/footer/footer",
+    "home": "/components/home/home",
+    "user": "/components/user/user",
+    "rank": "/components/rank/rank"
+  },
+  "disableScroll": false,
+  "disableSwipeBack": false,
+  "onReachBottomDistance": 50
+}
